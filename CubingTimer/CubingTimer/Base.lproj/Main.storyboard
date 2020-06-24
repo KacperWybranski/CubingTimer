@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CubingTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFS-bu-TXP">
+                                <rect key="frame" x="146" y="429" width="122" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGE-A5-eSW">
+                                <rect key="frame" x="0.0" y="94" width="414" height="335"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrambleLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l19-7P-KaL">
+                                        <rect key="frame" x="20" y="155.5" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="l19-7P-KaL" firstAttribute="centerY" secondItem="UGE-A5-eSW" secondAttribute="centerY" id="IwP-3Q-Qs8"/>
+                                    <constraint firstAttribute="trailing" secondItem="l19-7P-KaL" secondAttribute="trailing" constant="20" id="Qq8-4x-Ic5"/>
+                                    <constraint firstItem="l19-7P-KaL" firstAttribute="leading" secondItem="UGE-A5-eSW" secondAttribute="leading" constant="20" id="lkD-TA-u7x"/>
+                                    <constraint firstItem="l19-7P-KaL" firstAttribute="centerX" secondItem="UGE-A5-eSW" secondAttribute="centerX" id="tvH-8i-DSP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Wl-wL-HHN">
+                                <rect key="frame" x="0.0" y="782" width="414" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkR-kf-gah">
+                                        <rect key="frame" x="15" y="12.5" width="49.5" height="49.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zkR-kf-gah" secondAttribute="height" multiplier="1:1" id="QzD-IY-ZeL"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="goforward.15" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="warmupTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lN5-Es-0hp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zkR-kf-gah" firstAttribute="leading" secondItem="3Wl-wL-HHN" secondAttribute="leading" constant="15" id="Oe3-Ed-Ku3"/>
+                                    <constraint firstAttribute="height" constant="80" id="ghn-Mf-qKw"/>
+                                    <constraint firstItem="zkR-kf-gah" firstAttribute="centerY" secondItem="3Wl-wL-HHN" secondAttribute="centerY" constant="-3" id="hr4-mO-6kn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UGE-A5-eSW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2gO-yJ-jlM"/>
+                            <constraint firstItem="UGE-A5-eSW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5hz-JJ-Vox"/>
+                            <constraint firstItem="3Wl-wL-HHN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Arf-cF-w53"/>
+                            <constraint firstItem="eFS-bu-TXP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZGx-Ve-3Kg"/>
+                            <constraint firstItem="eFS-bu-TXP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dok-GT-lXq"/>
+                            <constraint firstItem="UGE-A5-eSW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lPW-Rk-o0L"/>
+                            <constraint firstItem="eFS-bu-TXP" firstAttribute="top" secondItem="UGE-A5-eSW" secondAttribute="bottom" id="nCV-i2-XDw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UGE-A5-eSW" secondAttribute="trailing" id="wA0-06-7br"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Wl-wL-HHN" secondAttribute="trailing" id="wkm-WE-3lI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Wl-wL-HHN" secondAttribute="bottom" id="zic-8D-Fh8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t3S-RY-dYi"/>
+                    <connections>
+                        <outlet property="buttonsView" destination="3Wl-wL-HHN" id="oW9-HX-uUM"/>
+                        <outlet property="score" destination="eFS-bu-TXP" id="wqU-DG-33Q"/>
+                        <outlet property="scrambleLabel" destination="l19-7P-KaL" id="vs3-Mo-rDq"/>
+                        <outlet property="warmupButton" destination="zkR-kf-gah" id="aas-oZ-g3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goforward.15" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
